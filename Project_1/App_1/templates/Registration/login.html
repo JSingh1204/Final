@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome! Please Log-in</title>
+</head>
+<body>
+	<form method ="POST" action="{% url 'user_logged' %}">
+	{% csrf_token %}
+	
+	{{register_form}}
+
+    <input type="Submit" value="Log-in">
+</form>
+
+</body>
+</html>

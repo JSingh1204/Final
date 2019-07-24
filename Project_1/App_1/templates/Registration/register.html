@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+</head>
+<h2>Please Fill all the Field to Register</h2>
+<body>
+<form method ="POST" action="{% url 'register' %}">
+	{% csrf_token %}
+
+	{{register_form}}
+
+    <input type="submit" value="Register">
+
+
+
+</form>
+</body>
+</html>

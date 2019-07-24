@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body><h1> This is working</h1>
+	<form method ="POST" action="{% url 'user_out' %}">
+		{% csrf_token %}
+
+	<input type="Submit" value="Log-out">
+
+</body>
+</html>
